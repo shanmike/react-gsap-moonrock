@@ -9,7 +9,7 @@ const Main = styled.div`
   width:100%;
   overflow:none;
   display:grid;
-  background: linear-gradient(180deg, #1A1A1A, #ccc 60%, #717171 100%);
+  background: linear-gradient(180deg, #1A1A1A, #eee 60%, #717171 100%);
 `
 const Animation = styled.div`
   display:flex;
@@ -29,11 +29,11 @@ const Controls = styled.div`
 `
 const Button = styled.button`
   font-size:1em;
-  margin:15px;
-  padding:5px 10px;
+  margin:1em;
+  padding:0.2em .5em;
   background-color: transparent;
   border: 2px solid #414141;
-  border-radius:15px;
+  border-radius:1em;
   cursor:pointer;
   color:#414141;
   outline:none;
