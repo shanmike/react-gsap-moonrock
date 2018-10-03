@@ -9,14 +9,12 @@ const Main = styled.div`
   width:100%;
   overflow:none;
   display:grid;
+  align-items:center;
+  justify-content:center;
   background: linear-gradient(180deg, #1A1A1A, #eee 60%, #717171 100%);
 `
-const Animation = styled.div`
-  display:flex;
-  flex-direction:column;
-  align-items: center;
-  justify-content: center;
-`
+const Animation = styled.div``
+
 const Controls = styled.div`
   display:grid;
   grid-template-columns: repeat(4, 1fr);
@@ -77,7 +75,7 @@ class App extends Component {
 
   componentDidMount(){
     this.tl
-    .to(this.Shadow, 0, {transformOrigin:"top left", x:-100 , y:35, width:200}, 0)
+    .to(this.Shadow, 0, {transformOrigin:"top left", x:-75 , y:35, width:200}, 0)
     .from(this.Shadow, .9, {transformOrigin:"center right",scale:0,ease: Sine.easeInOut}, 1)
     .from(this.Rock, 2, {ease: Elastic.easeOut.config(1,.9), y:-1000},1)
   }
